@@ -17,6 +17,7 @@ public class FileUploadService {
 //            System.out.println("Home : " + home);
 //  ##           ย้ายไฟล์ไปที่รับเข้ามา ไปเก็บใน Folder นั้นๆ
             file.transferTo(new File(FilenameUtils.normalize(home + "/Desktop/Picture/" + file.getOriginalFilename())));
+            System.out.println("Upload Success Fully");
         } catch (IOException e) {
             e.printStackTrace();
         }
